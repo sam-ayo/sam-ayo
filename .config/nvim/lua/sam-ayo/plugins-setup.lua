@@ -34,6 +34,7 @@ return packer.startup(function(use)
     -- color scheme
     use("rafi/awesome-vim-colorschemes")
     use("bluz71/vmi-nightfly-guicolors") -- colorscheme might change if I don't like
+    use("embark-theme/vim") 
 
     use("christoomey/vim-tmux-navigator") -- terminal navigation 
 

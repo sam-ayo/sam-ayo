@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  vim = {
+    loaded = true,
+    path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim",
+    url = "https://github.com/embark-theme/vim"
+  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim-devicons",
