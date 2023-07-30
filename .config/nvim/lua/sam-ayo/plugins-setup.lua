@@ -58,6 +58,7 @@ return packer.startup(function(use)
      
     -- in buffer terminal 
     use("tc50cal/vim-terminal")
+
     if packer_bootstrap then
         require("packer").sync()
     end
