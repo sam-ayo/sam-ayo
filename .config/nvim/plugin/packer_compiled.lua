@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["awesome-vim-colorschemes"] = {
+    loaded = true,
+    path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/awesome-vim-colorschemes",
+    url = "https://github.com/rafi/awesome-vim-colorschemes"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -129,11 +134,6 @@ _G.packer_plugins = {
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim-move",
     url = "https://github.com/matze/vim-move"
   },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
-  },
   ["vim-terminal"] = {
     loaded = true,
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim-terminal",
@@ -143,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vmi-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/Users/samueladeoye/.local/share/nvim/site/pack/packer/start/vmi-nightfly-guicolors",
+    url = "https://github.com/bluz71/vmi-nightfly-guicolors"
   }
 }
 

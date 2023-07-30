@@ -41,5 +41,7 @@ keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>")
 keymap.set("n", "<leader>fb", ":Telescope buffers<CR>")
 keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>")
 
-
+-- vim terminal
+keymap.del("n", "<leader>t>")
+keymap.set("n", "<leader>t", ":TerminalSplit zsh<CR>")
 

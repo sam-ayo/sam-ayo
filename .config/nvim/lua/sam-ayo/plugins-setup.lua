@@ -31,7 +31,9 @@ return packer.startup(function(use)
 
     use("nvim-lua/plenary.nvim") 
 
-    use("bluz71/vim-nightfly-guicolors") -- colorscheme might change if I don't like
+    -- color scheme
+    use("rafi/awesome-vim-colorschemes")
+    use("bluz71/vmi-nightfly-guicolors") -- colorscheme might change if I don't like
 
     use("christoomey/vim-tmux-navigator") -- terminal navigation 
 
@@ -55,7 +57,6 @@ return packer.startup(function(use)
      
     -- in buffer terminal 
     use("tc50cal/vim-terminal")
-
     if packer_bootstrap then
         require("packer").sync()
     end
