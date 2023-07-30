@@ -1,0 +1,8 @@
+require("sam-ayo.plugins-setup")
+require("sam-ayo.core.options")
+require("sam-ayo.core.keymaps")
+require("sam-ayo.core.colorscheme")
+require("sam-ayo.plugins.comment")
+require("sam-ayo.plugins.nvim-tree")
+require("sam-ayo.plugins.lualine")
+require("sam-ayo.plugins.telescope")
