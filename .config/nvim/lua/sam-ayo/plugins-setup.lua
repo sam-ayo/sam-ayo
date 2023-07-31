@@ -10,6 +10,7 @@ local ensure_packer = function()
   return false
 end
 
+
 local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- command to install missing plugins
@@ -33,8 +34,9 @@ return packer.startup(function(use)
 
     -- color scheme
     use("rafi/awesome-vim-colorschemes")
-    use("bluz71/vmi-nightfly-guicolors") -- colorscheme might change if I don't like
     use("embark-theme/vim") 
+    use("srcery-colors/srcery-vim")
+    use("sainnhe/everforest")
 
     use("christoomey/vim-tmux-navigator") -- terminal navigation 
 
@@ -58,6 +60,23 @@ return packer.startup(function(use)
      
     -- in buffer terminal 
     use("tc50cal/vim-terminal")
+    
+    -- autocompletion 
+    use('hrsh7th/nvim-cmp')
+    use('hrsh7th/cmp-path')
+    use('hrsh7th/cmp-buffer')
+
+    -- snippets engines
+    use('L3MON4D3/LuaSnip')
+    use('saadparwaiz1/cmp_luasnip')
+    use('rafamadriz/friendly-snippets')
+
+    --- managing and installing lsp servers
+    use('williamboman/mason.nvim')
+    use('williamboman/mason-lspconfig.nvim')
+
+    -- configuring lsp servers
+    use('neovim/nvim-lspconfig')
 
     if packer_bootstrap then
         require("packer").sync()

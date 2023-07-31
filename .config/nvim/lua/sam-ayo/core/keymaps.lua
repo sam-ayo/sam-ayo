@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap 
 local cmd = vim.cmd
+local g = vim.g
 
 -- general keymaps
 keymap.set("i", "jj", "<ESC>") -- Move into normal mode from insert mode 
@@ -21,6 +22,8 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
 
 -- plugin keymaps 
+-- vim move
+g.move_key_modifier = 'A'
 
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
@@ -50,11 +53,3 @@ keymap.set("n", "H", ":TmuxNavigateLeft<CR>")
 keymap.set("n", "J", ":TmuxNavigateDown<CR>")
 keymap.set("n", "K", ":TmuxNavigateUp<CR>")
 keymap.set("n", "L", ":TmuxNavigateRight<CR>")
-
-
-
-
-
-
-
-
