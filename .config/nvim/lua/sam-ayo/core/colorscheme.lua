@@ -1,15 +1,16 @@
 local g = vim.g
 
-
 -- Everforest configurations
-g.everforest_background = 'hard'
+g.everforest_background = "soft"
 g.everforest_better_performance = 1
 g.everforest_enable_italic = 1
 g.everforest_diagnostic_text_highlight = 1
 
-
-local status, _ = pcall(vim.cmd, "colorscheme everforest")
-if not status then 
-    print("Everforest not found!")
-    return
+local theme = "challenger-deep"
+local command = string.format("colorscheme %s", theme)
+local status = pcall(vim.cmd, command)
+if not status then
+	local error = string.format("Cannot find %s", theme)
+	print(error)
+	return
 end
